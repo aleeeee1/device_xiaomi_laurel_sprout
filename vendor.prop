@@ -187,6 +187,7 @@ vendor.gralloc.disable_ubwc=0
 ro.hardware.keystore_desede=true
 
 # Media
+debug.stagefright.c2inputsurface=-1
 vendor.mm.enable.qcom_parser=16777215
 
 # Perf
