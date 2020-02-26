@@ -162,6 +162,9 @@ persist.vendor.fingerprint.type=udfps_optical
 persist.vendor.fingerprint.sensor_location=360|1423|67
 persist.vendor.fingerprint.sensor_modules=goodix_fod
 
+# fastbootd
+ro.fastbootd.available=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
