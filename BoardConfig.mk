@@ -48,6 +48,7 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.laurel_sprout
 TARGET_USES_MIUI_CAMERA := true
+MALLOC_SVELTE := true
 
 # Display
 TARGET_SCREEN_DENSITY := 320
