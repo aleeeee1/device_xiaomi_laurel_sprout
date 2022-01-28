@@ -69,6 +69,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libcrypto-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "$2"
             ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            [ "$2" = "" ] && return 0
+            grep -q lib-imsvtshim.so "${2}" ||  "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+            ;;
     esac
 }
 
