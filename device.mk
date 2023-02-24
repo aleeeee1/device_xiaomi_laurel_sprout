@@ -353,6 +353,7 @@ PRODUCT_PACKAGES += \
     init.laurel_sprout.rc \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
+    init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
