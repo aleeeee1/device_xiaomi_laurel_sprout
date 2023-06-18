@@ -26,9 +26,6 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-# Inherit MindTheGapps
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
