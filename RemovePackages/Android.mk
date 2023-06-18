@@ -45,7 +45,7 @@ LOCAL_OVERRIDES_PACKAGES := \
 	PixelWallpapers2021 \
 	PrebuiltGmail \
 	PrebuiltBugle \
-	PrebuiltDeskClockGoogle
+	PrebuiltDeskClockGoogle \
 	RecorderPrebuilt \
 	SCONE \
 	SafetyHubPrebuilt \
