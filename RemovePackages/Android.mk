@@ -5,49 +5,67 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-        Chrome-Stub \
-        Chrome \
-        Drive \
-        Maps \
-        Photos \
-        PrebuiltGmail \
-        Videos \
-        YouTube \
-        FilesPrebuilt \
-        AndroidAutoStubPrebuilt \
-        AmbientSensePrebuilt \
+	AmbientSensePrebuilt \
+	AndroidAutoStubPrebuilt \
 	AppDirectedSMSService \
+	arcore \
 	CalendarGooglePrebuilt \
+	CalculatorGooglePrebuilt \
 	Camera2 \
 	CarrierSetup \
+	Chrome \
+	Chrome-Stub \
 	ConnMO \
 	DCMO \
 	DMService \
 	DevicePolicyPrebuilt \
 	DiagnosticsToolPrebuilt \
-	SafetyHubPrebuilt \
-	HelpRtcPrebuilt \
+	Drive \
+	FilesPrebuilt \
 	GCS \
+	Gallery2 \
+	GoogleCamera \
+	GoogleContacts \
+	GoogleContactsSyncAdapter \
+	GoogleTTS \
+	LocationHistoryPrebuilt \
+	HelpRtcPrebuilt \
+	Maps \
+	MarkupGoogle \
+	Music \
 	MyVerizonServices \
 	NgaResources \
 	OBDM_Permissions \
+	obdm_stub \
+	OdadPrebuilt \
 	OemDmTrigger \
+	Photos \
+	PixelBuds \
 	PixelLiveWallpaperPrebuilt \
 	PixelWallpapers2021 \
-	Music \
+	PrebuiltGmail \
+	PrebuiltBugle \
+	PrebuiltDeskClockGoogle
 	RecorderPrebuilt \
+	SCONE \
+	SafetyHubPrebuilt \
 	ScribePrebuilt \
 	Showcase \
+	Snap \
+	Snap2 \
+	SnapdragonCamera \
 	SoundAmplifierPrebuilt \
 	SprintDM \
 	SprintHM \
 	Tycho \
 	USCCDM \
 	VZWAPNLib \
-        SCONE \
-        YouTubeMusicPrebuilt \
-        arcore \
-	VzwOmaTriger
+	ViaBrowser \
+	Videos \
+	VzwOmaTriger \
+	VzwOmaTrigger \
+	YouTube \
+	YouTubeMusicPrebuilt \
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
