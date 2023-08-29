@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <!-- Flag to enable framework dimming for udfps -->
+     <bool name="config_udfpsFrameworkDimming">true</bool>
+
+</resources>
