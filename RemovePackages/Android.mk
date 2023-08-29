@@ -5,14 +5,19 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
+	AmbientSensePrebuilt \
 	AndroidAutoStubPrebuilt \
 	AppDirectedSMSService \
 	arcore \
+	BasicDreams \
+	Calculator \
+	Contacts \
 	CalendarGooglePrebuilt \
 	CalculatorGooglePrebuilt \
 	Camera2 \
 	CarrierSetup \
 	Chrome \
+	Duo \
 	Chrome-Stub \
 	ConnMO \
 	DCMO \
@@ -20,7 +25,10 @@ LOCAL_OVERRIDES_PACKAGES := \
 	DevicePolicyPrebuilt \
 	DiagnosticsToolPrebuilt \
 	Drive \
+	DocumentsUIGoogle \
+	DeskClockGoogle \
 	FilesPrebuilt \
+	FilesGoogle \
 	GCS \
 	Gallery2 \
 	GoogleCamera \
@@ -28,7 +36,9 @@ LOCAL_OVERRIDES_PACKAGES := \
 	GoogleContactsSyncAdapter \
 	GoogleTTS \
 	LocationHistoryPrebuilt \
+	LatinImeGoogle \
 	HelpRtcPrebuilt \
+	Keep \
 	Maps \
 	MarkupGoogle \
 	Music \
@@ -42,12 +52,12 @@ LOCAL_OVERRIDES_PACKAGES := \
 	PixelBuds \
 	PixelLiveWallpaperPrebuilt \
 	PixelWallpapers2021 \
+	PixelSetupWizard \
 	PrebuiltGmail \
 	PrebuiltBugle \
 	PrebuiltDeskClockGoogle \
 	RecorderPrebuilt \
 	SCONE \
-	SafetyHubPrebuilt \
 	ScribePrebuilt \
 	Showcase \
 	Snap \
@@ -55,16 +65,25 @@ LOCAL_OVERRIDES_PACKAGES := \
 	SnapdragonCamera \
 	SoundAmplifierPrebuilt \
 	SprintDM \
-	SprintHM \
+	SafetyHubPrebuilt \
+ 	SprintHM \
 	Tycho \
+	talkback \
+	TagGoogle \
+	LatinImeGoogle \
 	USCCDM \
 	VZWAPNLib \
 	ViaBrowser \
 	Videos \
+	VZWAPNLib \
+	Velvet \
 	VzwOmaTriger \
 	VzwOmaTrigger \
 	YouTube \
 	YouTubeMusicPrebuilt \
+	YTMusic \
+	WallpaperCropper \
+
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
