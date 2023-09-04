@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Whether to pulse onFingerDown actions instead
+	of waking the screen while the screen is off or in lpm. -->
+	<bool name="config_pulseOnFingerDown">true</bool>
+
+	<!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+	<integer name="config_screenRecorderMaxFramerate">70</integer>
+</resources>
