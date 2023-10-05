@@ -1,5 +1,6 @@
 # Camera
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
+persist.sys.camera.fallback_id_2=20
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
 # CNE
