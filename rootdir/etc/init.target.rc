@@ -169,6 +169,10 @@ on boot
 # Touchpanel
     chmod 0664 /dev/input/event2
     chown system system /dev/input/event2
+    
+# Lineage Health
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
 
 #Give bk03 partition 0666 permissions, only in the ato version
 on boot && property:ro.factory_mode=1

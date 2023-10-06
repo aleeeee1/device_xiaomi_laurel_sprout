@@ -224,6 +224,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs.xml \
