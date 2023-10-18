@@ -6,4 +6,7 @@
 
 	<!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
 	<integer name="config_screenRecorderMaxFramerate">70</integer>
+
+	<!-- Udfps vendor code -->
+    <integer name="config_udfpsVendorCode">22</integer>
 </resources>
