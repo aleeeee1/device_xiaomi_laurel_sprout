@@ -25,7 +25,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 	DevicePolicyPrebuilt \
 	DiagnosticsToolPrebuilt \
 	Drive \
-	DocumentsUIGoogle \
 	DeskClockGoogle \
 	FilesPrebuilt \
 	FilesGoogle \
@@ -40,7 +39,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 	HelpRtcPrebuilt \
 	Keep \
 	Maps \
-	MarkupGoogle \
 	Music \
 	MyVerizonServices \
 	NgaResources \
