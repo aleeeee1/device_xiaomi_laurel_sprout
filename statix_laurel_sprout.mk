@@ -19,8 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Spark stuff
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common StatiX stuff
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,7 +30,7 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := spark_laurel_sprout
+PRODUCT_NAME := statix_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 BUILD_FINGERPRINT := Xiaomi/laurel_sprout/laurel_sprout:11/RKQ1.200903.002/V12.0.26.0.RFQMIXM:user/release-keys
@@ -42,18 +43,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="laurel_sprout" \
     PRIVATE_BUILD_DESC="laurel_sprout-user 11 RKQ1.200903.002 V12.0.15.0.RFQMIXM release-keys" 
 
-# UDFPS
-EXTRA_UDFPS_ICONS := true
-EXTRA_UDFPS_ANIMATIONS := true
-
 # Props
-SPARK_BUILD_TYPE := UNOFFICIAL
+STATIX_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_FACE_UNLOCK_SUPPORTED=true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_HAS_FOD := true
 TARGET_USES_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
+INCLUDE_PIXEL_LAUNCHER := true
