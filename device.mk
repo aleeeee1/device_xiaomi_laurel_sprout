@@ -532,3 +532,9 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
+
+# Kernel
+TARGET_KERNEL_DIR ?= $(LOCAL_PATH)-kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel

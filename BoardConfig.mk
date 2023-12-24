@@ -108,17 +108,30 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_trinket
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0x4a90000 androidboot.hardware=qcom msm_rtb.filter=0x237 lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=4e00000.dwc3
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_PAGESIZE := 4096
+
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 
+BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0 
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x4a90000 
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom 
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237 
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 
+BOARD_KERNEL_CMDLINE += service_locator.enable=1 
+BOARD_KERNEL_CMDLINE += swiotlb=1 
+BOARD_KERNEL_CMDLINE += androidboot.configfs=true 
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=4e00000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += loop.max_part=7
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_SEPARATED_DTBO := true
+
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)-kernel/dtb
+BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
+
+BOARD_PREBUILT_DTBIMAGE_DIR := $(TARGET_KERNEL_DIR)
+BOARD_PREBUILT_DTBOIMAGE := $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtbo.img
+
 
 # Media
 TARGET_DISABLED_UBWC := true
