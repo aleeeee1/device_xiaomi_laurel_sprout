@@ -530,11 +530,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
-# Inherit the proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
-
 # Kernel
-TARGET_KERNEL_DIR ?= $(LOCAL_PATH)-kernel
+TARGET_KERNEL_DIR := $(LOCAL_PATH)-kernel
 LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
 
 PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+PRODUCT_COPY_FILES += $(TARGET_KERNEL_DIR)/dtb.img:dtb.img
+
+# Inherit the proprietary files
+$(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
