@@ -288,6 +288,8 @@ PRODUCT_COPY_FILES += \
 
 # KEYSTORE
 PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.0.vendor \
     android.system.keystore2
 
 # Lights
