@@ -575,6 +575,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </interface>
   </hal>
 
+  <hal format="hidl">
+    <name>android.system.keystore2</name>
+    <transport>hwbinder</transport>
+    <version>3.0</version>
+    <interface>
+      <name>IKeystoreService</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
+
   <hal format="hidl" optional="false">
     <name>vendor.qti.gnss</name>
     <transport>hwbinder</transport>

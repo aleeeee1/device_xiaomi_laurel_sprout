@@ -265,6 +265,16 @@
             <instance>gnss_vendor</instance>
         </interface>
     </hal>
+
+    <hal format="hidl" optional="false">
+        <name>android.system.keystore2</name>
+        <version>3.0</version>
+        <interface>
+            <name>IKeystoreService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
     <hal format="hidl" optional="false">
         <name>vendor.qti.hardware.alarm</name>
         <version>1.0</version>
