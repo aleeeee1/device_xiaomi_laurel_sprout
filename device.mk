@@ -422,7 +422,8 @@ PRODUCT_PACKAGES += \
     rild \
     librmnetctl \
     libxml2 \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-lite
 
 PRODUCT_PACKAGES += \
     ims-ext-common \
