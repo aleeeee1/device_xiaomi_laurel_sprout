@@ -2987,6 +2987,8 @@ vendor/lib64/vendor.qti.latency@2.0.so
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
+vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
 # DPM
 framework/tcmclient.jar
@@ -3038,10 +3040,14 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/librmp.so
 vendor/lib64/libcpion.so
 vendor/lib64/libbase64.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/librmp.so
 vendor/lib/libcppf.so
 vendor/lib/libbase64.so
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so
+vendor/lib/libprotobuf-cpp-full-3.9.1.so
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
@@ -3176,6 +3182,7 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+vendor/lib64/libdisplaydebug.so
 vendor/lib/libqseed3.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-colormgr-algo.so
@@ -3183,6 +3190,7 @@ vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
+vendor/lib/libdisplaydebug.so
 
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
@@ -3297,6 +3305,7 @@ system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
+vendor/lib64/libjson.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
@@ -3314,6 +3323,7 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
+vendor/lib/libjson.so
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
@@ -3364,6 +3374,8 @@ vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/lib/vendor.qti.hardware.radio.qcriNvOpt@1.0.so
+vendor/lib/librmnetctl.so
+vendor/lib64/librmnetctl.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/liblqe.so
@@ -3639,6 +3651,8 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+vendor/lib/libqdMetaData.so
+vendor/lib64/libqdMetaData.so
 
 # WiFi Display - HDCP
 vendor/bin/wfdhdcphalservice
