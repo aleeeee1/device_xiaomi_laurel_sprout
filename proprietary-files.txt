@@ -2790,8 +2790,8 @@ vendor/firmware/sign_xiaomi/a610_zap.b02
 vendor/firmware/sign_xiaomi/a610_zap.elf
 vendor/firmware/sign_xiaomi/a610_zap.mdt
 
-# Wlan
-vendor/firmware/wlan/qca_cld/wlan_mac.bin
+# Wlan - from RKQ1.200903.002 V12.0.26.0.RFQMIXM
+vendor/firmware/wlan/qca_cld/wlan_mac.bin|fb562b09039bb7c0893619c2f5ce524a2ef64cc4
 
 # laurel_sprout package version: RKQ1.200903.002 V12.0.9.0.RFQMIXM, unless stated otherwise
 
@@ -3177,6 +3177,7 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/libdisplaydebug.so
+vendor/lib64/libqservice.so
 vendor/lib/libqseed3.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-colormgr-algo.so
@@ -3185,6 +3186,7 @@ vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib/libdisplaydebug.so
+vendor/lib/libqservice.so
 
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
@@ -3646,7 +3648,10 @@ vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/lib/libqdMetaData.so
+vendor/lib/libgralloc.qti.so
+vendor/lib/libwfdaac_vendor.so
 vendor/lib64/libqdMetaData.so
+vendor/lib64/libgralloc.qti.so
 
 # WiFi Display - HDCP
 vendor/bin/wfdhdcphalservice
