@@ -3650,6 +3650,10 @@ vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/lib/libqdMetaData.so
 vendor/lib/libgralloc.qti.so
 vendor/lib/libwfdaac_vendor.so
+vendor/lib/vendor.display.config@2.0.so
+vendor/lib/libdisplayconfig.qti.so
+vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/vendor.display.config@2.0.so
 vendor/lib64/libqdMetaData.so
 vendor/lib64/libgralloc.qti.so
 
