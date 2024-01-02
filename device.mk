@@ -310,6 +310,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
+
+# MEMTRACK
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.memtrack-service
+
+
 # OMX
 PRODUCT_PACKAGES += \
     libavservices_minijail \
