@@ -135,6 +135,10 @@ TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+TARGET_KERNEL_NO_LLVM_BINUTILS := true
+TARGET_KERNEL_CLANG_PATH := /home/alee/proton-clang
+KERNEL_LD := LD=ld.lld
+
 # Media
 TARGET_DISABLED_UBWC := true
 
