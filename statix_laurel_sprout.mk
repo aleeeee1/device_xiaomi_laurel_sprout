@@ -19,9 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common StatiX stuff
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
+# Inherit some common Derp stuff
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -30,7 +29,7 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := statix_laurel_sprout
+PRODUCT_NAME := derp_laurel_sprout
 PRODUCT_MODEL := Mi A3
 
 BUILD_FINGERPRINT := Xiaomi/laurel_sprout/laurel_sprout:11/RKQ1.200903.002/V12.0.26.0.RFQMIXM:user/release-keys
@@ -44,8 +43,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="laurel_sprout-user 11 RKQ1.200903.002 V12.0.15.0.RFQMIXM release-keys" 
 
 # Props
-STATIX_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_USES_BLUR := true
-INCLUDE_PIXEL_LAUNCHER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_HAS_FOD := true
