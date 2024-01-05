@@ -640,4 +640,11 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="false">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <interface>
+            <name>IXiaomiFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
