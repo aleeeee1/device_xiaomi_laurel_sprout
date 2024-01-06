@@ -2,10 +2,12 @@
 
 # Audio hardware
 vendor/lib/hw/audio.primary.trinket.so
+vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libtinycompress.so
 vendor/lib64/hw/audio.primary.trinket.so
+vendor/lib64/hw/sound_trigger.primary.trinket.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libtinycompress.so
