@@ -30,7 +30,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
         <version>6.0</version>
-        <version>7.0</version>
         <interface>
             <name>IDevicesFactory</name>
             <instance>default</instance>
@@ -40,7 +39,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
         <version>6.0</version>
-        <version>7.0</version>
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
