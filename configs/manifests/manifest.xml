@@ -31,7 +31,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <transport>hwbinder</transport>
         <version>6.0</version>
         <version>7.0</version>
-        <version>7.1</version>
         <interface>
             <name>IDevicesFactory</name>
             <instance>default</instance>
@@ -42,7 +41,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <transport>hwbinder</transport>
         <version>6.0</version>
         <version>7.0</version>
-        <version>7.1</version>
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
@@ -792,5 +790,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IGoodixFingerprintDaemon</name>
             <instance>default</instance>
         </interface>
+    </hal>
+
+    <hal format="hidl">
+        <name>android.frameworks.sensorservice</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ISensorManager/default</fqname>
     </hal>
 </manifest>
