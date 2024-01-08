@@ -59,14 +59,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libvolumelistener
 
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.2-impl \
-    android.hardware.bluetooth.audio@2.1-impl \
-	android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth.a2dp-impl \
-    audio.bluetooth.default \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/listen_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/listen_platform_info.xml \
@@ -109,10 +101,24 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbluetooth_audio_session \
+    android.hardware.bluetooth.audio@2.2-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.a2dp-impl \
+    android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth@1.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0 \
+    vendor.qti.hardware.btconfigstore@2.0 \
+    audio.bluetooth.default \
+    libbluetooth_audio_session \
+    libbthost_if \
+    libbthost_if.vendor \
+    libldacBT_bco.vendor 
 
 # Camera
 PRODUCT_PACKAGES += \
