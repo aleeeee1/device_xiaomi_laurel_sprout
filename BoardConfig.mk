@@ -36,6 +36,7 @@ AB_OTA_PARTITIONS += \
 
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
+BUILD_BROKEN_CLANG_PROPERTY := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -119,6 +120,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Media
 TARGET_DISABLED_UBWC := true

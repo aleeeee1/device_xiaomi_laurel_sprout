@@ -52,7 +52,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl \
-	android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.a2dp@1.0-impl \ 
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor
 
@@ -508,7 +509,7 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi-service \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
@@ -531,3 +532,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
+
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
