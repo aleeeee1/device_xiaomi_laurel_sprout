@@ -55,7 +55,15 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener
+    libvolumelistener \
+    libaudioroute \
+    libhdmiedid \
+    libexthwplugin \
+    libhfp \
+    libsndmonitor \
+    libspkrprot \
+    libtinycompress \
+    tinymix
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -275,7 +283,7 @@ PRODUCT_PACKAGES += \
 # HIDL VNDK
 $(foreach target, $(shell cat $(LOCAL_PATH)/vndk/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
 
-PRODUCT_EXTRA_VNDK_VERSIONS := 29 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 31 32 33
 
 # Hotword Permissions
 PRODUCT_COPY_FILES += \
