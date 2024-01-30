@@ -24,7 +24,7 @@ vendor/lib64/libhdmiedid.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libspkrprot.so
 vendor/lib64/libhfp.so
-vendor/lib64/lilibhdmipassthrubhfp.so
+vendor/lib64/libhdmipassthru.so
 
 # Audio ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
