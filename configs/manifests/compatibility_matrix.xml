@@ -119,6 +119,10 @@
             <name>ILight</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.memtrack</name>
