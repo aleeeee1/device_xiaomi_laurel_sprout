@@ -127,7 +127,9 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libbluetooth_audio_session \
     libbthost_if \
+    libbthost_if_sink \
     libbthost_if.vendor \
+    libbthost_if_sink.vendor \
     libldacBT_bco.vendor 
 
 # Camera
