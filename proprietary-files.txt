@@ -2885,7 +2885,7 @@ vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# Bluetooth aptX - from coral - QQ2A.200305.003
+# Bluetooth aptX - from coral QQ2A.200305.003
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
@@ -3064,7 +3064,7 @@ vendor/lib64/libminksocket.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 
-# DRM - QSEECOMD - qssi-user 12 SKQ1.211006.001 V13.0.3.0.SJKMIXM release-keys
+# DRM - from QSEECOMD qssi-user 12 SKQ1.211006.001 V13.0.3.0.SJKMIXM release-keys
 vendor/lib/libspl.so|ec1ae86b1727e33c87fd8c00ebe02d8734510745
 vendor/lib64/libspl.so|e2b3e2dd28b0eee567d72de696cd1e01288ae06f
 
