@@ -174,6 +174,10 @@ PRODUCT_DISABLE_SCUDO := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/lahaina-yupikqrd-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/lahaina-yupikqrd-snd-card_Button_Jack.kl
 
+# Debug
+PRODUCT_PACKAGES += \
+    dlopen
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.trinket \
