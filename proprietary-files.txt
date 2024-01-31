@@ -26,10 +26,6 @@ vendor/lib64/libspkrprot.so
 vendor/lib64/libhfp.so
 vendor/lib64/libhdmipassthru.so
 
-# Audio manually Picked - from idk
-vendor/lib/libsndcardparser.so|0e3470597811bfed6e68900ecae19258496465fd3741fb80a049c7848b3ef634
-vendor/lib64/libsndcardparser.so|81d17b5a5bdb66498f4ca0425d5628eea16514c928ab70f9b8d30da7cf4abbe8
-
 # Audio ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb
