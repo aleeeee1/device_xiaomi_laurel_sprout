@@ -790,8 +790,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
 
-    <hal format="hidl" optional="false">
+    <hal format="hidl">
         <name>android.frameworks.sensorservice</name>
+        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>ISensorManager</name>
@@ -805,6 +806,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <version>1.0</version>
         <interface>
             <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <hal format="hidl">
+        <name>android.hardware.sensors</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>ISensors</name>
             <instance>default</instance>
         </interface>
     </hal>
