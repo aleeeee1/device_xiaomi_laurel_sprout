@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libtinycompress \
     tinymix \
-    libsndcardparser \
+    libsndcardparser
     
 
 PRODUCT_COPY_FILES += \
