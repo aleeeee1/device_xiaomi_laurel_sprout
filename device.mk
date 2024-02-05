@@ -465,7 +465,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rild \
     librmnetctl \
-    libxml2 
+    libxml2 \
+    android.hardware.secure_element@1.2.vendor
 
 # Protonbuf
 PRODUCT_PACKAGES += \
