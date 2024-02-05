@@ -175,6 +175,10 @@
         <fqname>IRadioData/slot2</fqname>
     </hal>
     <hal format="aidl" optional="true">
+        <name>android.hardware.radio.voice</name>
+        <fqname>IRadioVoice/slot1</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>android.hardware.radio.modem</name>
         <fqname>IRadioModem/slot1</fqname>
         <fqname>IRadioModem/slot2</fqname>
