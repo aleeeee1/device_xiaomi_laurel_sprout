@@ -335,6 +335,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- vibrator -->
+    <hal format="aidl">
+        <name>android.hardware.vibrator</name>
+        <version>1</version>
+        <fqname>IVibratorManager/default</fqname>
+    </hal>
     <!-- fm -->
     <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
