@@ -800,11 +800,5 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
 
-    <hal format="aidl">
-        <name>android.hardware.wifi</name>
-        <interface>
-            <name>IWifi</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
+    
 </manifest>
