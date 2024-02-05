@@ -800,10 +800,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
 
-    <hal format="hidl">
+    <hal format="aidl">
         <name>android.hardware.wifi</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
         <interface>
             <name>IWifi</name>
             <instance>default</instance>
