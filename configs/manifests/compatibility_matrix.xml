@@ -644,6 +644,14 @@
             <instance>wifidisplaysessionvideotrack</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.wifi</name>
+        <version>1</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wigig.netperftuner</name>
         <version>1.0</version>
