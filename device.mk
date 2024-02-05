@@ -38,6 +38,9 @@ TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
+# AuthSecret
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0-service
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
