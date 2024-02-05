@@ -800,7 +800,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
 
-    <hal format="hidl">
+    <hal format="aidl">
         <name>android.hardware.wifi</name>
         <interface>
             <name>IWifi</name>
