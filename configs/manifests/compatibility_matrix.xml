@@ -140,10 +140,15 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl">
+    <hal format="aidl" optional="true">
         <name>android.hardware.radio.data</name>
         <fqname>IRadioData/slot1</fqname>
         <fqname>IRadioData/slot2</fqname>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.radio.sim</name>
+        <fqname>IRadioSim/slot1</fqname>
+        <fqname>IRadioSim/slot2</fqname>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.radio.config</name>
