@@ -38,6 +38,9 @@ TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
+# AuthSecret
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0-service
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
@@ -465,7 +468,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rild \
     librmnetctl \
-    libxml2 
+    libxml2 \
+    android.hardware.secure_element@1.2.vendor
 
 # Protonbuf
 PRODUCT_PACKAGES += \
@@ -566,6 +570,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)//etc/excluded-input-devices.xml
+
+# Weaver
+PRODUCT_PACKAGES += \
+    android.hardware.weaver@1.0.vendor
 
 # Wifi
 PRODUCT_PACKAGES += \
