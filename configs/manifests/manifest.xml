@@ -336,10 +336,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <!-- vibrator -->
-    <hal format="aidl">
+    <hal format="hidl">
         <name>android.hardware.vibrator</name>
-        <version>1</version>
-        <fqname>IVibratorManager/default</fqname>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IVibrator/default</fqname>
+        <fqname>@1.0::IVibratorManager/default</fqname>
     </hal>
     <!-- fm -->
     <hal format="hidl">
