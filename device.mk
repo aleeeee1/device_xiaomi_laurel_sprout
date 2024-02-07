@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0 \
     audio.bluetooth.default \
     libbluetooth_audio_session \
+    liba2dpoffload \
     libbthost_if \
     libbthost_if_sink \
     libbthost_if.vendor \
