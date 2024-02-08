@@ -583,6 +583,7 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf \
+    libnetd_client \
     LaurelWifiOverlay
 
 
