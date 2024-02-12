@@ -2623,6 +2623,10 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
+# Camera modules - from wayne
+vendor/lib/libmmcamera_mfproc_postcpp.so|44e4fe8d12ab344191cc3dcf177cb3d6d1379441
+vendor/lib/libmmcamera_mfproc_precpp.so|f1b73b6e823e52b782f84d38e86e66dc513040d7
+
 # Camera OIS
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
