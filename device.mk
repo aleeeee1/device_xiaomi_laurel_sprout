@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libstdc++.vendor \
+    libstdc++_vendor \
     libstdc++ \
     libcamera_shim \
     android.frameworks.sensorservice@1.0 \
