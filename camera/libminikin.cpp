@@ -35,3 +35,7 @@ extern "C" void _ZN7minikin10FontFamilyC1ENS0_7VariantEONSt3__16vectorINS_4FontE
 extern "C" void _ZN7minikin14FontCollectionC1ERKNSt3__16vectorINS1_10shared_ptrINS_10FontFamilyEEENS1_9allocatorIS5_EEEE() {
     return;
 }
+
+extern "C" void _ZN14SeeMoreWrapper11_yu3oaTHCJgEv() {
+    return;
+}
