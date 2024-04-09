@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_laurel_sprout.mk
+    $(LOCAL_DIR)/blaze_laurel_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_laurel_sprout-user \
-    lineage_laurel_sprout-userdebug \
-    lineage_laurel_sprout-eng
+    blaze_laurel_sprout-user \
+    blaze_laurel_sprout-userdebug \
+    blaze_laurel_sprout-eng
