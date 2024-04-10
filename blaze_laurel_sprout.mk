@@ -21,6 +21,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 # Blaze props
 BLAZE_MAINTAINER := bakkaq
 TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := true
 
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_NAME := blaze_laurel_sprout
