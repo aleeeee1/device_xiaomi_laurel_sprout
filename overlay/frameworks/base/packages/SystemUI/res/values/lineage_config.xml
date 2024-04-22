@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Udfps vendor code -->
+    <integer name="config_udfpsVendorCode">22</integer>
+
     <!-- Flag to enable framework dimming for udfps -->
     <bool name="config_udfpsFrameworkDimming">true</bool>
 
