@@ -5,11 +5,14 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-    PrebuiltGmail \
-    Photos \
-    LatinIMEGooglePrebuilt \
+    CalendarGooglePrebuilt \
+    DevicePolicyPrebuilt \
+    GoogleContacts \
     GoogleTTS \
-	Maps
+    Maps \
+    Photos \
+    PrebuiltGmail \
+    talkback
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
