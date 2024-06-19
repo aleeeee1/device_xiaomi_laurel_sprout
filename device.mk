@@ -246,6 +246,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Radio AIDL wrapper
+PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom
