@@ -43,7 +43,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.bluetooth.audio-impl \
+    android.media.audio.common.types-V2-cpp
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
