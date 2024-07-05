@@ -33,7 +33,6 @@ ro.config.low_ram=false
 ro.lmk.log_stats=false
 
 # Media
-debug.stagefright.ccodec=1
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-aac=true
