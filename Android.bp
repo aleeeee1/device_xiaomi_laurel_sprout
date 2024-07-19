@@ -24,3 +24,6 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",
     symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
 }
+cc_library_shared {
+    name: "libldacBT_bco",
+}

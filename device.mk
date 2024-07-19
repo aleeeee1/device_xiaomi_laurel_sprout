@@ -58,7 +58,8 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libtinycompress
+    libtinycompress \
+    libldacBT_bco
 
 # Audio configs
 PRODUCT_COPY_FILES += \
@@ -109,7 +110,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libutils.vendor
-    
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
