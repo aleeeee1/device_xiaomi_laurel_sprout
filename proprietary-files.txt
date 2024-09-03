@@ -1577,10 +1577,6 @@ vendor/lib/libvorbisidec.so
 vendor/lib64/libmmosal.so
 
 # Media configs
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_codecs_vendor.xml
-vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_vendor.xml
 vendor/etc/system_properties.xml
