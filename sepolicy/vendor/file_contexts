@@ -35,7 +35,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service          u:object_r:hal_misys_default_exec:s0
 
 # Sensors HAL
-/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal            u:object_r:hal_sensors_default_exec:s0
+/vendor/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal            u:object_r:hal_sensors_default_exec:s0
 
 # Power
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr      u:object_r:hal_power_default_exec:s0
