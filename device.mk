@@ -455,8 +455,5 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/laurel_sprout/laurel_sprout-vendor.mk)
 
-# Fix prebuilt kernel
-$(shell mkdir -p $(OUT_DIR)/target/product/laurel_sprout/obj/KERNEL_OBJ/usr)
-
 # Inheirt signing files
 -include vendor/lineage-priv/keys/keys.mk
