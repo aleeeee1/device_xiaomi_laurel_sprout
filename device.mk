@@ -107,6 +107,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libwatermark_shim
 
+PRODUCT_PACKAGES += \
+    libutils.vendor
+    
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
