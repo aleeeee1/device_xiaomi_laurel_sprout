@@ -162,9 +162,9 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3.vendor \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v32.so \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
+# VNDK
+PRODUCT_PACKAGES += \
+    libhidlbase-v32
 
 # FM
 PRODUCT_PACKAGES += \
