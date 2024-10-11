@@ -163,6 +163,10 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=360|1423|67
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
