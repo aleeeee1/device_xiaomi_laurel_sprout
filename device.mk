@@ -158,8 +158,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3.vendor \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+    android.hardware.biometrics.fingerprint-service.xiaomi
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v32.so \
@@ -367,6 +366,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.laurel_sprout.rc \
+    init.fingerprint.rc \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.power.rc \
