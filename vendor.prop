@@ -163,6 +163,12 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=360|1423|67
+persist.vendor.fingerprint.sensor_modules=goodix_fod
+persist.vendor.fingerprint.udfps.control_illumination=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
@@ -213,6 +219,9 @@ persist.vendor.sensors.support_direct_channel=false
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.com.android.dataroaming=true
 ro.telephony.default_network=22,22
+
+# Sensors
+ro.vendor.sensors.xiaomi.udfps=true
 
 # SurfaceFlinger
 ro.surface_flinger.has_HDR_display=true

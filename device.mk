@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3.vendor \
+    android.hardware.biometrics.fingerprint-service.xiaomi \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 PRODUCT_COPY_FILES += \
@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.laurel_sprout.rc \
+    init.fingerprint.rc \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.power.rc \
@@ -383,6 +384,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal \
+    sensors.xiaomi.v2 \
     android.frameworks.sensorservice@1.0.vendor
 
 PRODUCT_PACKAGES += \
