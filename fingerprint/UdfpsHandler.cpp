@@ -24,6 +24,8 @@
 #define PARAM_NIT_NONE 0
 
 #define FOD_STATUS_PATH "/sys/class/touch/tp_dev/fod_status"
+#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
+
 #define FOD_STATUS_ON 1
 #define FOD_STATUS_OFF 0
 
@@ -33,10 +35,6 @@ static void set(const std::string& path, const T& value) {
     file << value;
 }
 
-static const char* kFodUiPaths[] = {
-        "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui",
-        "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui",
-};
 
 static bool readBool(int fd) {
     char c;
@@ -63,14 +61,7 @@ class LaurelSproutUdfpsHander : public UdfpsHandler {
         mDevice = device;
 
         std::thread([this]() {
-            int fodUiFd;
-            for (auto& path : kFodUiPaths) {
-                fodUiFd = open(path, O_RDONLY);
-                if (fodUiFd >= 0) {
-                    break;
-                }
-            }
-
+            int fodUiFd = open(FOD_UI_PATH, O_RDONLY);
             if (fodUiFd < 0) {
                 LOG(ERROR) << "failed to open fd, err: " << fodUiFd;
                 return;
