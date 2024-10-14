@@ -25,6 +25,10 @@
 
 #define FOD_STATUS_PATH "/sys/class/touch/tp_dev/fod_status"
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
+#define DISPPARAM_PATH "/sys/class/drm/card0-DSI-1/disp_param"
+
+#define DISPPARAM_HBM_FOD_ON "0x1d20FE0"
+#define DISPPARAM_HBM_FOD_OFF "0x20f0F20"
 
 #define FOD_STATUS_ON 1
 #define FOD_STATUS_OFF 0
@@ -91,6 +95,7 @@ class LaurelSproutUdfpsHander : public UdfpsHandler {
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
         LOG(DEBUG) << __func__;
 
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
         mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_FOD);
         set(FOD_STATUS_PATH, FOD_STATUS_ON);
     }
@@ -98,6 +103,7 @@ class LaurelSproutUdfpsHander : public UdfpsHandler {
     void onFingerUp() {
         LOG(DEBUG) << __func__;
 
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
         mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
         set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     }
@@ -133,7 +139,7 @@ class LaurelSproutUdfpsHander : public UdfpsHandler {
 
     void cancel() {
         LOG(DEBUG) << __func__;
-        set(FOD_STATUS_PATH, FOD_STATUS_OFF);
+        mDevice->cancel(mDevice);
     }
   private:
     fingerprint_device_t *mDevice;

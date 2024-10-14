@@ -9,7 +9,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
     Camera2 \
-    Chrome-Stub \
     DevicePolicyPrebuilt \
     GoogleContacts \
     GoogleTTS \
