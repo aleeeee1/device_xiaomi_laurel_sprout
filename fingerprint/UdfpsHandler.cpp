@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHander.laurel_sprout"
+#define LOG_TAG "UdfpsHandler.laurel_sprout"
 
 #include "UdfpsHandler.h"
 
@@ -38,7 +38,7 @@ static void set(const std::string& path, const T& value) {
     file << value;
 }
 
-class LaurelSproutUdfpsHander : public UdfpsHandler {
+class LaurelSproutUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t *device) {
         mDevice = device;
@@ -98,7 +98,7 @@ class LaurelSproutUdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new LaurelSproutUdfpsHander();
+    return new LaurelSproutUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {

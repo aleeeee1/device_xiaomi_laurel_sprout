@@ -161,9 +161,9 @@ persist.vendor.dpmhalservice.enable=1
 drm.service.enabled=true
 
 # Fingerprint
-ro.vendor.fingerprint.type=udfps_optical
-ro.vendor.fingerprint.sensor_location=360|1423|67
-ro.vendor.fingerprint.sensor_modules=fpc_fod,goodix_fod,goodix_fod6,syna
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=360|1423|67
+persist.vendor.fingerprint.sensor_modules=fpc_fod,goodix_fod,goodix_fod6,syna
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
