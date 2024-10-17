@@ -40,20 +40,33 @@ class LaurelSproutUdfpsHandler : public UdfpsHandler {
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        // nothing
+        LOG(DEBUG) << __func__;
     }
 
     void onFingerUp() {
-        // nothing
+        LOG(DEBUG) << __func__;
     }
     
     void onAcquired(int32_t /*result*/, int32_t /*vendorCode*/) {
-        // nothing
+        LOG(DEBUG) << __func__;
+    }
+
+    void preEnroll() {
+        LOG(DEBUG) << __func__;
+    }
+
+    void enroll() {
+        LOG(DEBUG) << __func__;
+    }
+
+    void postEnroll() {
+        LOG(DEBUG) << __func__;
     }
 
     void cancel() {
-        // nothing
+        LOG(DEBUG) << __func__;
     }
+    
   private:
     fingerprint_device_t *mDevice;
 };
