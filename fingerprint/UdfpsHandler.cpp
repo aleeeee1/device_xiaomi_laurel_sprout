@@ -33,68 +33,10 @@ static void set(const std::string& path, const T& value) {
     file << value;
 }
 
-static const char* kFodUiPaths[] = {
-        "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui",
-        "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui",
-};
-
-static bool readBool(int fd) {
-    char c;
-    int rc;
-
-    rc = lseek(fd, 0, SEEK_SET);
-    if (rc) {
-        LOG(ERROR) << "failed to seek fd, err: " << rc;
-        return false;
-    }
-
-    rc = read(fd, &c, sizeof(char));
-    if (rc != 1) {
-        LOG(ERROR) << "failed to read bool from fd, err: " << rc;
-        return false;
-    }
-
-    return c != '0';
-}
-
 class LaurelSproutUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t *device) {
         mDevice = device;
-
-        std::thread([this]() {
-            int fodUiFd;
-            for (auto& path : kFodUiPaths) {
-                fodUiFd = open(path, O_RDONLY);
-                if (fodUiFd >= 0) {
-                    break;
-                }
-            }
-
-            if (fodUiFd < 0) {
-                LOG(ERROR) << "failed to open fd, err: " << fodUiFd;
-                return;
-            }
-
-            struct pollfd fodUiPoll = {
-                    .fd = fodUiFd,
-                    .events = POLLERR | POLLPRI,
-                    .revents = 0,
-            };
-
-            while (true) {
-                int rc = poll(&fodUiPoll, 1, -1);
-                if (rc < 0) {
-                    LOG(ERROR) << "failed to poll fd, err: " << rc;
-                    continue;
-                }
-
-                bool fodUi = readBool(fodUiFd);
-
-                mDevice->extCmd(mDevice, COMMAND_NIT, fodUi ? PARAM_NIT_FOD : PARAM_NIT_NONE);
-                set(FOD_STATUS_PATH, FOD_STATUS_ON);
-            }
-        }).detach();
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
