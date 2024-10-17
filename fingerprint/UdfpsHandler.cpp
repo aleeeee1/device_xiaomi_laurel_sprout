@@ -45,18 +45,39 @@ class LaurelSproutUdfpsHandler : public UdfpsHandler {
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
         LOG(DEBUG) << __func__;
+
+        set(FOD_STATUS_PATH, FOD_STATUS_ON);
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_FOD);
     }
 
     void onFingerUp() {
         LOG(DEBUG) << __func__;
+
+        set(FOD_STATUS_PATH, FOD_STATUS_OFF);
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
     }
     
-    void onAcquired(int32_t /*result*/, int32_t /*vendorCode*/) {
+    void onAcquired(int32_t result, int32_t vendorCode) {
         LOG(DEBUG) << __func__;
+
+        if (result == FINGERPRINT_ACQUIRED_GOOD) {
+            set(FOD_STATUS_PATH, FOD_STATUS_OFF);
+            set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
+        } else if (vendorCode == 21 || vendorCode == 23) {
+            /*
+             * vendorCode = 21 waiting for fingerprint authentication
+             * vendorCode = 23 waiting for fingerprint enroll
+             */
+            set(FOD_STATUS_PATH, FOD_STATUS_ON);
+        }
     }
 
     void preEnroll() {
         LOG(DEBUG) << __func__;
+
+        mDevice->pre_enroll(mDevice);
     }
 
     void enroll() {
@@ -65,10 +86,15 @@ class LaurelSproutUdfpsHandler : public UdfpsHandler {
 
     void postEnroll() {
         LOG(DEBUG) << __func__;
+
+        onFingerUp();
+        mDevice->post_enroll(mDevice);
     }
 
     void cancel() {
         LOG(DEBUG) << __func__;
+        
+        mDevice->cancel(mDevice);
     }
 
   private:
