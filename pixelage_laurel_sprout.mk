@@ -19,7 +19,7 @@ $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Pixelage props
-# (nothing)
+PIXELAGE_BUILD="laurel_sprout"
 
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_NAME := pixelage_laurel_sprout
