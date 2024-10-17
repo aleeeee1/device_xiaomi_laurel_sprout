@@ -27,6 +27,10 @@
 #define FOD_STATUS_ON 1
 #define FOD_STATUS_OFF 0
 
+#define DISPPARAM_PATH "/sys/class/drm/card0-DSI-1/disp_param"
+#define DISPPARAM_HBM_FOD_ON "0x1d20FE0"
+#define DISPPARAM_HBM_FOD_OFF "0x20f0F20"
+
 template <typename T>
 static void set(const std::string& path, const T& value) {
     std::ofstream file(path);
@@ -66,7 +70,7 @@ class LaurelSproutUdfpsHandler : public UdfpsHandler {
     void cancel() {
         LOG(DEBUG) << __func__;
     }
-    
+
   private:
     fingerprint_device_t *mDevice;
 };
