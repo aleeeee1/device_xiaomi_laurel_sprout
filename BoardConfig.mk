@@ -69,7 +69,6 @@ TARGET_USES_ION := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.laurel_sprout
 TARGET_USES_FOD_ZPOS := true
 
 # FM
