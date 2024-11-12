@@ -21,6 +21,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 # Pixelage props
 PIXELAGE_BUILD="laurel_sprout"
 TARGET_FACE_UNLOCK_SUPPORTED := true
+PIXELAGE_BUILDTYPE := OFFICIAL
 
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_NAME := pixelage_laurel_sprout
