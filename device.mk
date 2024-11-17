@@ -255,6 +255,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# OTA
+PRODUCT_PACKAGES += \
+    Updater
+
 #RRO Overlays
 PRODUCT_PACKAGES += \
     DeviceAsWebcamLAUREL
