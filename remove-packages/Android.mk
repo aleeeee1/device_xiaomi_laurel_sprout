@@ -12,7 +12,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Chrome-Stub \
     DevicePolicyPrebuilt \
     GoogleContacts \
-    GoogleTTS \
     Maps \
     Photos \
     PixelThemesStub \
@@ -20,7 +19,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     PrebuiltGmail \
     Snap \
     Snap2 \
-    talkback \
     Velvet \
     YouTube \
     YouTubeMusicPrebuilt \
