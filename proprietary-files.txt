@@ -56,9 +56,7 @@ vendor/lib/soundfx/libshoebox.so
 
 # Audio HAL
 vendor/lib/hw/audio.primary.trinket.so
-vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib/libaudio_log_utils.so
-vendor/lib64/hw/sound_trigger.primary.trinket.so
 
 # Audio Libraries
 system/apex/com.android.media.swcodec/lib64/libstagefright_amrnb_common.so:vendor/lib64/libstagefright_amrnb_common.so
