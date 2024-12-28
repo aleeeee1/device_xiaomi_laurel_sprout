@@ -8,6 +8,7 @@
 
 #include "UdfpsHandler.h"
 
+#include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
 #include <fcntl.h>
 #include <fstream>
@@ -18,6 +19,8 @@
 #define COMMAND_NIT 10
 #define PARAM_NIT_FOD 1
 #define PARAM_NIT_NONE 0
+
+using ::aidl::android::hardware::biometrics::fingerprint::AcquiredInfo;
 
 template <typename T>
 static void set(const std::string& path, const T& value) {
@@ -111,7 +114,7 @@ class LaurelSproutUdfpsHandler : public UdfpsHandler {
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
-        if (result == FINGERPRINT_ACQUIRED_GOOD) {
+        if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
             set(kFodStatusPaths[0], 0);
         } else if (vendorCode == 21 || vendorCode == 23) {
             /*
