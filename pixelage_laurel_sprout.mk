@@ -8,14 +8,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixelage stuff.
+$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
+# Pixelage props
+PIXELAGE_BUILD="laurel_sprout"
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 PRODUCT_DEVICE := laurel_sprout
-PRODUCT_NAME := lineage_laurel_sprout
+PRODUCT_NAME := pixelage_laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := xiaomi
