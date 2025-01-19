@@ -17,6 +17,7 @@ $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 # Pixelage props
 PIXELAGE_BUILD="laurel_sprout"
 TARGET_FACE_UNLOCK_SUPPORTED := true
+PIXELAGE_MAINTAINER := bakkaq
 
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_NAME := pixelage_laurel_sprout
