@@ -22,6 +22,9 @@ genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/wakeup_count u:objec
 # UFS
 genfscon sysfs /devices/platform/soc/4804000.ufshc/clkgate_enable               u:object_r:vendor_sysfs_scsi_host:s0
 
+# HBM
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display/hbm                                                                       u:object_r:vendor_sysfs_graphics:s0
+
 # Wakeup source stats
 genfscon sysfs /devices/platform/soc/1610000.qcom,msm-eud/wakeup/wakeup                                                                                                                                                        u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc/rtc/rtc0/wakeup                                                                                         u:object_r:sysfs_wakeup:s0
