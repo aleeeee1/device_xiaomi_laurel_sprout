@@ -58,7 +58,13 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
     'vendor/lib/hw/audio.primary.laurel_sprout.so': blob_fixup()
-        .binary_regex_replace(b"vendor/lib/liba2dpoffload.so", b"liba2dpoffload_laurel_sprout.so")
+        .binary_regex_replace(b"vendor/lib/liba2dpoffload.so", b"liba2dpoffload_laurel_sprout.so"),
+    'vendor/lib/libalLDC.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
