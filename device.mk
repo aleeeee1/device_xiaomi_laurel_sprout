@@ -272,6 +272,7 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi
 
 # Speed profile services and wifi-service to reduce RAM and storage.
