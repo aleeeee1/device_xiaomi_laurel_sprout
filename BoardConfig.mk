@@ -46,7 +46,7 @@ TARGET_BOOTLOADER_BOARD_NAME := trinket
 TARGET_NO_BOOTLOADER := true
 
 # Camera
-TARGET_NEEDS_RAW10_BUFFER_FIX := true
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.laurel_sprout
 
 # Display
 TARGET_SCREEN_DENSITY := 320
