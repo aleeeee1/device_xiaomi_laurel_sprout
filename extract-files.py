@@ -16,14 +16,10 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 namespace_imports = [
-    "hardware/qcom-caf/sm8150",
-    "hardware/qcom-caf/wlan",
-    "hardware/xiaomi",
-    "vendor/qcom/opensource/commonsys/display",
-    "vendor/qcom/opensource/commonsys-intf/display",
-    "vendor/qcom/opensource/dataservices",
-    "vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um",
-    "vendor/qcom/opensource/display",
+    'hardware/qcom-caf/sm8150',
+    'hardware/qcom-caf/wlan',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
 ]
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
@@ -70,7 +66,6 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
-    check_elf=True,
 )
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
