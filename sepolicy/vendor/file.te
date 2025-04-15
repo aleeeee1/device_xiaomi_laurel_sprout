@@ -9,3 +9,6 @@ type public_adsprpcd_file, file_type;
 type ramdump_vendor_data_file, file_type, data_file_type;
 
 type thermal_data_file, file_type, data_file_type;
+
+# Torch
+type sysfs_torch, fs_type, sysfs_type;
