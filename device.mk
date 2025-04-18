@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
     libldacBT_enc \
     libldacBT_abr
 
-# BtHelper
-PRODUCT_PACKAGES += \
-    BtHelper
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
@@ -97,6 +93,7 @@ PRODUCT_PACKAGES += \
 
 # Custom Packages
 PRODUCT_PACKAGES += \
+    Updater \
     GameSpace \
     BtHelper
 
