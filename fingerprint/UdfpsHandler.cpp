@@ -138,7 +138,7 @@ class LaurelSproutUdfpsHandler : public UdfpsHandler {
 
     void onAcquired(int32_t result, int32_t vendorCode) {
         if (static_cast<AcquiredInfo>(result) == AcquiredInfo::GOOD) {
-            set(kFodStatusPaths[0], 0);
+            set(kFodStatusPaths[0], 1);
         } else if (vendorCode == 21 || vendorCode == 23) {
             /*
              * vendorCode = 21 waiting for fingerprint authentication
