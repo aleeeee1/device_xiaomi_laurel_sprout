@@ -6,17 +6,17 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     Aperture \
-    CalculatorGooglePrebuilt \
+    CalculatorGooglePrebuilt_85005407 \
     CalendarGooglePrebuilt \
     Camera2 \
+    Chrome \
     Chrome-Stub \
-    DevicePolicyPrebuilt \
+    DevicePolicyPrebuilt-v10052480 \
     GoogleContacts \
     Maps \
     Photos \
-    PixelThemesStub \
-    PixelThemesStub2022_and_newer \
     PrebuiltGmail \
+    RecorderPrebuilt_675788680 \
     Snap \
     Snap2 \
     Velvet \
