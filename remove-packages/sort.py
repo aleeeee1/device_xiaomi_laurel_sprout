@@ -1,6 +1,8 @@
 def sort_elements(file_path, element_key):
     with open(file_path, "r") as file:
         lines = file.readlines()
+    
+    tab =  "    " * 2
 
     in_override_block = False
     collected_overrides = set()
@@ -8,13 +10,18 @@ def sort_elements(file_path, element_key):
 
     for line in lines:
         if in_override_block:
-            cleaned_line = line.replace("\\", "").strip()
-            collected_overrides.add(cleaned_line)
-            if "\\" not in line:
+            if "]" in line:
                 in_override_block = False
-                updated_lines.append("    " + " \\\n    ".join(sorted(collected_overrides, key=str.casefold)) + "\n")
+                updated_lines.append(tab
+                                     + f",\n{tab}".join(sorted(collected_overrides, key=str.casefold))
+                                     + ",\n")
+                print(collected_overrides)
                 collected_overrides.clear()
-            continue
+            
+            else:
+                cleaned_line = line.replace(",", "").strip()
+                collected_overrides.add(cleaned_line)
+                continue
 
         updated_lines.append(line)
         if element_key in line:
@@ -23,4 +30,4 @@ def sort_elements(file_path, element_key):
     with open(file_path, "w") as file:
         file.writelines(updated_lines)
 
-sort_elements("Android.mk", "LOCAL_OVERRIDES_PACKAGES")
+sort_elements("Android.bp", "overrides")
