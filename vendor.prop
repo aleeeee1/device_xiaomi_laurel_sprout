@@ -167,9 +167,6 @@ ro.fastbootd.available=true
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
-# GPS
-persist.backup.ntpServer=0.pool.ntp.org
-
 # Graphics
 debug.egl.hw=0
 debug.force_no_blanking=true
