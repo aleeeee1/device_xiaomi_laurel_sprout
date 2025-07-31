@@ -95,7 +95,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
 
 # Media
 TARGET_USES_ION := true
-TARGET_DISABLED_UBWC := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
