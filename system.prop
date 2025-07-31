@@ -59,7 +59,6 @@ persist.rmnet.data.enable=true
 
 # RIL
 ril.subscription.types=RUIM
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Sensor
 persist.vendor.sensors.enable.mag_filter=true

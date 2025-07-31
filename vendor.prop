@@ -203,7 +203,6 @@ persist.vendor.radio.vdp_on_ims_cap=1
 persist.vendor.sensors.enable.bypass_worker=true
 persist.vendor.sensors.enable.rt_task=false
 persist.vendor.sensors.support_direct_channel=false
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.com.android.dataroaming=true
 ro.telephony.default_network=22,22
 
