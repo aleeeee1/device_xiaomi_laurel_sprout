@@ -3152,7 +3152,6 @@ case "$target" in
             # device/target specific folder
             setprop vendor.dcvs.prop 1
 
-	    echo 65536 > /proc/sys/vm/extra_free_kbytes
             # colcoation v3 disabled
             echo 0 > /proc/sys/kernel/sched_min_task_util_for_boost
             echo 0 > /proc/sys/kernel/sched_min_task_util_for_colocation
