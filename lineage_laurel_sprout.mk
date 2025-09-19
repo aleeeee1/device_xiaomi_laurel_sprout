@@ -9,23 +9,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Lunaris stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
-# PixelOS props
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_STOCK_AICORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_BOOT_ANIMATION_RES := 720
+# Lunaris customizations
 WITH_GMS := true
+TARGET_OPTIMIZED_DEXOPT := true
+WITH_BCR := true # basic call recorder
+TARGET_USES_OMNI_GAPPS := true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.paranoid.maintainer=bakkaq
 
 PRODUCT_DEVICE := laurel_sprout
-PRODUCT_NAME := aosp_laurel_sprout
+PRODUCT_NAME := lineage_laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := xiaomi
